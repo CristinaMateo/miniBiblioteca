@@ -72,13 +72,16 @@ for (let i=0;i<books.length;i++){
     let li3 = document.createElement("li")
     let li4 = document.createElement("li")
     let li5 = document.createElement("li")
-    let li6 = document.createElement("li")
+ 
     let n1 = document.createTextNode("")
     let n2 = document.createTextNode("")
     let n3 = document.createTextNode("")
     let n4 = document.createTextNode("")
     let n5 = document.createTextNode("")
-    let n6 = document.createTextNode("")
+    
+    let a = document.createElement("a");
+    let aTexto = document.createTextNode("More information");
+   
 
 
    section.appendChild(article)
@@ -93,21 +96,26 @@ for (let i=0;i<books.length;i++){
    ul.appendChild(li3)
    ul.appendChild(li4)
    ul.appendChild(li5)
-   ul.appendChild(li6)
+   ul.appendChild(a)
+
    li1.appendChild(n1)
    li2.appendChild(n2)
    li3.appendChild(n3)
    li4.appendChild(n4)
    li5.appendChild(n5)
-   li6.appendChild(n6)
+  
    n1.textContent = "Author: " + books[i].author
    n2.textContent="Country: " + books[i].country
    n3.textContent="Language: " + books[i].language
    n4.textContent="Pages: " + books[i].pages
    n5.textContent= "Year: " + books[i].year
-   n6.textContent= "Link: " + books[i].link
+  
+   a.setAttribute("href", books[i].link);
+   a.appendChild(aTexto);
 }
 
+
+ 
 
 
 
