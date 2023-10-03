@@ -55,6 +55,11 @@ const books = [
 //FASE1
 
 let section = document.createElement("section")
+let body = document.querySelector("body")
+
+body.appendChild(section)
+
+
 
 for (let i=0;i<books.length;i++){
     let article = document.createElement("article")
@@ -81,6 +86,7 @@ for (let i=0;i<books.length;i++){
    titulo.appendChild(titulotxt)
    titulotxt.textContent =books[i].title
    article.appendChild(image)
+   image.src = books[i].imageLink
    article.appendChild(ul)
    ul.appendChild(li1)
    ul.appendChild(li2)
