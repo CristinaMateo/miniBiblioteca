@@ -100,12 +100,12 @@ for (let i=0;i<books.length;i++){
    li4.appendChild(n4)
    li5.appendChild(n5)
    li6.appendChild(n6)
-   n1.textContent =books[i].author
-   n2.textContent=books[i].country
-   n3.textContent=books[i].language
-   n4.textContent=books[i].link
-   n5.textContent=books[i].pages
-   n6.textContent=books[i].year
+   n1.textContent = "Author: " + books[i].author
+   n2.textContent="Country: " + books[i].country
+   n3.textContent="Language: " + books[i].language
+   n4.textContent="Pages: " + books[i].pages
+   n5.textContent= "Year: " + books[i].year
+   n6.textContent= "Link: " + books[i].link
 }
 
 
