@@ -73,18 +73,40 @@ a{
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
 
      article {
-       flex: 70%;
-       max-width: 70%;
+       flex: 45%;
+       max-width: 45%;
      }
    }
 
-   @media screen and (max-width: 800px) {
+   @media screen and (max-width: 1100px) {
+    header{
+      width: 100%;
+    }
+    article {
+      flex: 70%;
+      max-width: 70%;
+    }
+  }
 
+   @media screen and (max-width: 850px) {
+    main{
+      width: 85%;
+    }
     article {
       flex: 90%;
       max-width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    main{
+      width: 100%;
+    }
+    article {
+      flex: 100%;
+      max-width: 100%;
     }
   }
