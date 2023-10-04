@@ -128,6 +128,31 @@ for (let i=0;i<books.length;i++){
 
 
 
+//FASE 2 ??????????
+let segunda = document.createElement("section")
+main.appendChild(segunda)
+
+for (let i=0;i<books.length;i++){
+var fase2 = 
+  ` <article>
+      <h3></h3>
+      <img>
+      <ul>
+        <li>"Veremos"</li>
+        <li>"Si"</li>
+        <li>"esto"</li>
+        <li>"funciona"</li>
+        <li>"por fin"</li>
+        <a></a>
+      </ul>
+    </article>`;
+}
+    segunda.innerHTML = fase2
+
+
+  
+
+
 
 
  
