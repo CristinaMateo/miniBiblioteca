@@ -54,10 +54,22 @@ const books = [
 
 //FASE1
 
-let section = document.createElement("section")
-let body = document.querySelector("body")
 
-body.appendChild(section)
+let body = document.querySelector("body")
+let header = document.createElement("header")
+let main =document.createElement("main")
+let footer =document.createElement("footer")
+let nombre =document.createElement("h1")
+let section = document.createElement("section")
+let t1 = document.createTextNode("")
+t1.textContent = "Minibiblioteca"
+
+body.appendChild(header)
+body.appendChild(main)
+body.appendChild(footer)
+header.appendChild(nombre)
+nombre.appendChild(t1)
+main.appendChild(section)
 
 
 

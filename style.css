@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  body {
+    background-color:#FCDFA6;
+    font-size: 1.25rem;
+    color: #424B54;
+  }
+
+  header{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    background-color: #A18276;
+  }
+
+  main{
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.2em;
+  margin: 1em auto;
+  justify-content: space-around;
+}
+
+article{
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 0.2em;
+    background-color: #AAC0AA;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+h3{
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 70%;
+    height: 23em;
+}
+
+ul{
+   padding: 1em;
+   margin: 1em;
+}
+
+li{
+    list-style-type: none;
+    margin: 0.2em 2em;
+    padding: 0.4em 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+   padding: 1em;
+   padding-left: 1em;
+   margin: 1em;
+   margin-left: 1em;
+   text-decoration: none;
+   color: #b0782f;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+     article {
+       flex: 70%;
+       max-width: 70%;
+     }
+   }
+
+   @media screen and (max-width: 800px) {
+
+    article {
+      flex: 90%;
+      max-width: 90%;
+    }
+  }
