@@ -52,15 +52,14 @@ const books = [
   }]
 
 
-//FASE1
-
+  //general HTML
 
 let body = document.querySelector("body")
 let header = document.createElement("header")
 let main =document.createElement("main")
 let footer =document.createElement("footer")
 let nombre =document.createElement("h1")
-let section = document.createElement("section")
+
 let t1 = document.createTextNode("")
 t1.textContent = "Minibiblioteca"
 
@@ -69,6 +68,10 @@ body.appendChild(main)
 body.appendChild(footer)
 header.appendChild(nombre)
 nombre.appendChild(t1)
+
+//FASE1
+
+let section = document.createElement("section")
 main.appendChild(section)
 
 
@@ -128,25 +131,73 @@ for (let i=0;i<books.length;i++){
 
 
 
-//FASE 2 ??????????
+//FASE 2 
 let segunda = document.createElement("section")
 main.appendChild(segunda)
 
-for (let i=0;i<books.length;i++){
-var fase2 = 
+
+const fase2 = 
   ` <article>
-      <h3></h3>
-      <img>
+      <h3>${books[0].title}</h3>
+      <img src= ${books[0].imageLink}>
       <ul>
-        <li>"Veremos"</li>
-        <li>"Si"</li>
-        <li>"esto"</li>
-        <li>"funciona"</li>
-        <li>"por fin"</li>
-        <a></a>
+        <li>Author ${books[0].author}</li>
+        <li>Country ${books[0].country}</li>
+        <li>Language ${books[0].language}</li>
+        <li>Pages ${books[0].pages}</li>
+        <li>Year ${books[0].year}</li>
+        <a href=${books[0].link}>More information</a>
+      </ul>
+    </article>
+    <article>
+      <h3>${books[1].title}</h3>
+      <img src= ${books[1].imageLink}>
+      <ul>
+        <li>Author ${books[1].author}</li>
+        <li>Country ${books[1].country}</li>
+        <li>Language ${books[1].language}</li>
+        <li>Pages ${books[1].pages}</li>
+        <li>Year ${books[1].year}</li>
+        <a href=${books[1].link}>More information</a>
+      </ul>
+    </article>
+    <article>
+      <h3>${books[2].title}</h3>
+      <img src= ${books[2].imageLink}>
+      <ul>
+        <li>Author ${books[2].author}</li>
+        <li>Country ${books[2].country}</li>
+        <li>Language ${books[2].language}</li>
+        <li>Pages ${books[2].pages}</li>
+        <li>Year ${books[2].year}</li>
+        <a href=${books[2].link}>More information</a>
+      </ul>
+    </article>
+    <article>
+      <h3>${books[3].title}</h3>
+      <img src= ${books[3].imageLink}>
+      <ul>
+        <li>Author ${books[3].author}</li>
+        <li>Country ${books[3].country}</li>
+        <li>Language ${books[3].language}</li>
+        <li>Pages ${books[3].pages}</li>
+        <li>Year ${books[3].year}</li>
+        <a href=${books[3].link}>More information</a>
+      </ul>
+    </article>
+    <article>
+      <h3>${books[4].title}</h3>
+      <img src= ${books[4].imageLink}>
+      <ul>
+        <li>Author ${books[4].author}</li>
+        <li>Country ${books[4].country}</li>
+        <li>Language ${books[4].language}</li>
+        <li>Pages ${books[4].pages}</li>
+        <li>Year ${books[4].year}</li>
+        <a href=${books[4].link}>More information</a>
       </ul>
     </article>`;
-}
+  
     segunda.innerHTML = fase2
 
 
