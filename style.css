@@ -20,7 +20,7 @@
   }
 
   main{
-    width:80%;
+    width:100%;
     margin:auto;
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +35,14 @@
 }
 
 article{
-    flex: 40%;
-    max-width: 40%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 0.2em;
     background-color: #AAC0AA;
     margin-bottom: 1.5em;
     text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 h3{
